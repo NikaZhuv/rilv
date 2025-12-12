@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="14dp"
+    card_view:cardCornerRadius="12dp"
+    card_view:cardBackgroundColor="#0F112E"
+    android:padding="14dp">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp">
+
+        <!-- Left -->
+        <LinearLayout
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/poster1"
+                    android:layout_width="36dp"
+                    android:layout_height="54dp"
+                    android:layout_marginEnd="4dp"
+                    android:background="#1C2541" />
+
+                <ImageView
+                    android:id="@+id/poster2"
+                    android:layout_width="36dp"
+                    android:layout_height="54dp"
+                    android:background="#1C2541" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/poster3"
+                    android:layout_width="36dp"
+                    android:layout_height="54dp"
+                    android:layout_marginEnd="4dp"
+                    android:background="#1C2541" />
+
+                <ImageView
+                    android:id="@+id/poster4"
+                    android:layout_width="36dp"
+                    android:layout_height="54dp"
+                    android:background="#1C2541" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Right -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp">
+
+            <TextView
+                android:id="@+id/watchlistName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Favorite"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/watchlistDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="no description..."
+                android:textColor="#A3B8E0"
+                android:layout_marginTop="4dp"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:id="@+id/watchlistTags"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp">
+                <!-- динамические теги -->
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

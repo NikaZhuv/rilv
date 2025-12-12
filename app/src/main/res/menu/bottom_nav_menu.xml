@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/home_4_svgrepo_com"
+        android:title="Home" />
+    <item
+        android:id="@+id/trendsFragment"
+        android:icon="@drawable/fire"
+        android:title="Trends" />
+
+    <item
+        android:id="@+id/watchlistsFragment"
+        android:icon="@drawable/outline_bookmark_star_24"
+        android:title="Watchlists" />
+    <item
+        android:id="@+id/profileFragment"
+        android:icon="@drawable/profile_circle"
+        android:title="Profile" />
+</menu>

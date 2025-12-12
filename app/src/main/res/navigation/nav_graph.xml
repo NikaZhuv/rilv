@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph.xml"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.rilv.ui.ProfileFragment"
+        android:label="ProfileFragment"
+        tools:layout="@layout/fragment_profile"
+        />
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.rilv.ui.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/fragment_home"/>
+
+<!--        <action-->
+<!--            android:id="@+id/action_homeFragment_to_movieDetailFragment"-->
+<!--            app:destination="@id/detailFragment" -->
+<!--        />-->
+
+    <fragment
+        android:id="@+id/trendsFragment"
+        android:name="com.example.rilv.ui.TrendsFragment"
+        android:label="TrendsFragment"
+        tools:layout="@layout/fragment_trends"
+        />
+
+
+    <fragment
+        android:id="@+id/watchlistsFragment"
+        android:name="com.example.rilv.ui.WatchlistsFragment"
+        android:label="WatchlistsFragment"
+        tools:layout="@layout/fragment_watchlists" >
+
+        <action
+        android:id="@+id/action_watchlistsFragment_to_watchlistDetailFragment"
+        app:destination="@id/watchlistDetailFragment"            />
+    </fragment>
+
+    <fragment
+        android:id="@+id/watchlistDetailFragment"
+        android:name="com.example.rilv.watchlists.WatchlistDetailFragment"
+        tools:layout="@layout/fragment_watchlist_detail" >
+
+        <argument
+            android:name="watchlistId"
+            app:argType="long" />
+
+        <action
+            android:id="@+id/action_watchlistDetailFragment_to_watchlistsFragment"
+            app:destination="@id/watchlistsFragment" />
+    </fragment>
+
+</navigation>

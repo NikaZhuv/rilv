@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/watchlistsRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0C0E28">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/watchlistsRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        tools:listitem="@layout/item_watchlist" />
+
+    <!-- FAB -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addWatchlistBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_gravity="bottom|end"
+        android:src="@drawable/outline_add_24"
+        app:tint="#0C0E28"
+        app:backgroundTint="#84A4F6"
+        app:maxImageSize="32dp"
+        app:shapeAppearanceOverlay="@style/fab_rounded" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
