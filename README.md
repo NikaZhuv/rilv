@@ -2,6 +2,10 @@
 Android app for making movie watchlists.
 
 <div align="center">
+  <img src="https://github.com/user-attachments/assets/46ef1ff2-5267-4df8-8551-df35d2afb206" alt="rilv_logo" width="140">
+</div>
+<hr>
+<div align="center">
   <img src="https://github.com/user-attachments/assets/2cbdb805-1d4b-46b9-ae81-fe9161bb693b" alt="screen">
 </div>
 <div align="center">
