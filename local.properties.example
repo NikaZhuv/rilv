@@ -1,0 +1,6 @@
+# local.properties.example
+# Скопіюйте цей файл у local.properties та вставте ваш TMDB API ключ
+# Приклад:
+# API_KEY=your_tmdb_api_key_here
+
+API_KEY=
